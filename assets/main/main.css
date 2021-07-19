@@ -1,0 +1,190 @@
+body {
+  background-color: #c4c4c4;
+  height: 100%;
+  overflow: hidden;
+}
+
+body .head {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: deeppink;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .head p {
+  margin-left: 4px;
+}
+
+body .body {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 450px;
+}
+
+body .body form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .body form .count {
+  margin-bottom: 50px;
+}
+
+body .body form .count #count {
+  font-size: large;
+  width: 280px;
+  font-weight: 600;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid deeppink;
+  caret-color: deeppink;
+  text-align: center;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
+}
+
+body .body form .count #count::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .count #count:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .count #count::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .count #count::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .count #count:focus {
+  width: 700px;
+  color: mediumvioletred;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
+  border-bottom: 2px solid black;
+}
+
+body .body form .count #count::-webkit-inner-spin-button,
+body .body form .count #count::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body .body form .textArea {
+  margin-bottom: 50px;
+}
+
+body .body form .textArea .text {
+  border: none;
+  width: 280px;
+  background-color: transparent;
+  border-bottom: 2px solid deeppink;
+  outline: none;
+  font-size: large;
+  font-weight: 600;
+  caret-color: deeppink;
+  color: deeppink;
+  text-align: center;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
+}
+
+body .body form .textArea .text::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .textArea .text:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .textArea .text::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .textArea .text::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .body form .textArea .text:focus {
+  width: 700px;
+  color: mediumvioletred;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
+  border-bottom: 2px solid black;
+}
+
+body .body form .btn_1 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .body form .btn_1 .btn {
+  font-weight: 600;
+  color: deeppink;
+}
+
+body .body form .btn_1 .btn:hover {
+  background: deeppink;
+  color: black;
+  -webkit-transition: ease-out 2s;
+  transition: ease-out 2s;
+}
+
+body .body form .btn_1 .btn:active {
+  background-color: black;
+}
+
+body .bottom {
+  margin-top: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+/*# sourceMappingURL=main.css.map */

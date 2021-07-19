@@ -1,0 +1,113 @@
+body {
+	background-color: rgb(196, 196, 196);
+	height: 100%;
+	overflow: hidden;
+	.head {
+		background-color: black;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: deeppink;
+		-webkit-user-drag: none;
+		user-select: none;
+		p {
+			margin-left: 4px;
+		}
+	}
+	.body {
+		margin: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 450px;
+
+		form {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			.count {
+				margin-bottom: 50px;
+				#count {
+					font-size: large;
+					width: 280px;
+					font-weight: 600;
+					background-color: transparent;
+					outline: none;
+					border: none;
+					border-bottom: 2px solid deeppink;
+					caret-color: deeppink;
+					text-align: center;
+					transition: ease-in-out 2s;
+				}
+				#count::placeholder {
+					color: rgba(0, 0, 0, 0.7);
+				}
+				#count:focus {
+					width: 700px;
+					color: mediumvioletred;
+					transition: ease-in-out 2s;
+					border-bottom: 2px solid black;
+				}
+				#count::-webkit-inner-spin-button,
+				#count::-webkit-outer-spin-button {
+					-webkit-appearance: none;
+					margin: 0;
+				}
+			}
+			.textArea {
+				margin-bottom: 50px;
+				.text {
+					border: none;
+					width: 280px;
+					background-color: transparent;
+					border-bottom: 2px solid deeppink;
+					outline: none;
+					font-size: large;
+					font-weight: 600;
+					caret-color: deeppink;
+					color: deeppink;
+					text-align: center;
+					transition: ease-in-out 2s;
+				}
+				.text::placeholder {
+					color: rgba(0, 0, 0, 0.7);
+				}
+				.text:focus {
+					width: 700px;
+					color: mediumvioletred;
+					transition: ease-in-out 2s;
+					border-bottom: 2px solid black;
+				}
+			}
+			.btn_1 {
+				margin-top: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.btn {
+					font-weight: 600;
+					color: deeppink;
+				}
+				.btn:hover {
+					background: deeppink;
+					color: black;
+					transition: ease-out 2s;
+				}
+				.btn:active {
+					background-color: black;
+				}
+			}
+		}
+	}
+	.bottom {
+		margin-top: 10px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+}

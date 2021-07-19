@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- bootstrap cinfiguration -->
+
+		<link
+			rel="stylesheet"
+			href="../../node_modules/bootstrap/dist/css/bootstrap.css"
+		/>
+
+		<!-- end of the boot starp -->
+
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<div class="head alert-dark">
+			<h1>Whatsapp Bommer</h1>
+			<span><p>-v 1.0.1</p></span>
+		</div>
+		<div class="body">
+			<form id="form">
+				<div class="count">
+					<input
+						type="number"
+						id="count"
+						min="1"
+						max="1000"
+						placeholder="how many messages to send"
+					/>
+				</div>
+				<div class="textArea">
+					<input
+						type="text"
+						id="text"
+						class="text"
+						placeholder="Enter Your message"
+					/>
+				</div>
+				<div id="woptions" class="woptions">
+					<input
+						type="radio"
+						name="type_wtsapp"
+						value="W"
+						id="wapp"
+						checked
+					/>
+					<label for="w">Whatsapp</label>
+					<input type="radio" name="type_wtsapp" value="WB" id="wbapp" />
+					<label for="wb">Whatsapp Business</label>
+				</div>
+
+				<div class="btn_1">
+					<input type="submit" value="Start Attack" class="btn btn-dark" />
+				</div>
+			</form>
+		</div>
+		<div class="bottom">
+			<p align="center">powered by Sri Sathish ©️ 2021</p>
+		</div>
+
+		<!-- main script importing section -->
+
+		<script src="main.js"></script>
+	</body>
+</html>
