@@ -9,18 +9,19 @@ const wa_attack = async (props) => {
 	const mesg = props.msg;
 	const type_wApp = props.type;
 	console.log(type_wApp);
-	const targetuser =
-		'#pane-side > div:nth-child(1) > div > div > div:nth-child(11) > div > div > div > div.TbtXF > div._2pkLM > div._3Dr46 > span';
-
+	const targetuser = [
+		'#pane-side > div:nth-child(1) > div > div > div:nth-child(11) > div > div > div._3OvU8 > div._3vPI2 > div.zoWT4 > span',
+		`#pane-side > div:nth-child(1) > div > div > div:nth-child(11) > div > div > div > div._3OvU8 > div._3vPI2 > div.zoWT4 > span`
+	];
 	const inputFiled =
-		'#main > footer > div.vR1LG._3wXwX.copyable-area > div._2A8P4 > div > div._2_1wd.copyable-text.selectable-text';
+		'#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div.p3_M1 > div > div._13NKt.copyable-text.selectable-text';
 
 	// actual programs is begining
 	const browser = await puppeteer.launch({ headless: false });
 	const page = await browser.newPage();
 	await page.goto('https://web.whatsapp.com');
-	await page.waitForSelector(`${targetuser}`);
-	const target = await page.$(`${targetuser}`);
+	await page.waitForSelector(`${targetuser[type_wApp]}`);
+	const target = await page.$(`${targetuser[type_wApp]}`);
 	await target.click();
 	await page.waitForSelector(`${inputFiled}`);
 	const inp = await page.$(`${inputFiled}`);
@@ -75,5 +76,5 @@ ipcMain.on('data', (e, arg) => {
 app.on('ready', createMainWindow);
 
 app.on('window-all-closed', () => {
-	if (process.platform !== 'darwin') app.quit();
+	if (process.platform === 'darwin') app.quit();
 });

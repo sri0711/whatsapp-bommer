@@ -13,11 +13,11 @@ form.addEventListener('submit', (e) => {
 	const msg = document.getElementById('text').value;
 	let type_wApp;
 
-	if (wbapp.checked) {
+	if (wapp.checked) {
 		type_wApp = 0;
 	}
 
-	if (wapp.checked) {
+	if (wbapp.checked) {
 		type_wApp = 1;
 	}
 

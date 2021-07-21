@@ -1,5 +1,5 @@
 body {
-  background-color: #c4c4c4;
+  background-color: black;
   height: 100%;
   overflow: hidden;
 }
@@ -64,6 +64,7 @@ body .body form .count {
 }
 
 body .body form .count #count {
+  color: mediumvioletred;
   font-size: large;
   width: 280px;
   font-weight: 600;
@@ -78,19 +79,19 @@ body .body form .count #count {
 }
 
 body .body form .count #count::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .count #count:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .count #count::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .count #count::placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .count #count:focus {
@@ -98,7 +99,7 @@ body .body form .count #count:focus {
   color: mediumvioletred;
   -webkit-transition: ease-in-out 2s;
   transition: ease-in-out 2s;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #c4c4c4;
 }
 
 body .body form .count #count::-webkit-inner-spin-button,
@@ -127,19 +128,19 @@ body .body form .textArea .text {
 }
 
 body .body form .textArea .text::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .textArea .text:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .textArea .text::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .textArea .text::placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: #c4c4c4;
 }
 
 body .body form .textArea .text:focus {
@@ -147,7 +148,11 @@ body .body form .textArea .text:focus {
   color: mediumvioletred;
   -webkit-transition: ease-in-out 2s;
   transition: ease-in-out 2s;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+body .body form .woptions {
+  color: #c4c4c4;
 }
 
 body .body form .btn_1 {
@@ -180,6 +185,7 @@ body .body form .btn_1 .btn:active {
 }
 
 body .bottom {
+  color: #dadada;
   margin-top: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
